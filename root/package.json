@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prestart": "grunt",
+    "prestart": "node grunt.js",
     "start": "node .build/app.js"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "grunt-ts": "^1.11.2",
     "grunt-file-append": "0.0.4",
     "load-grunt-tasks": "~0.2.0",
+    "typeframework": "^0.1.0",
     "sails-disk": "^0.9.3"
   }
 }
