@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "grunt": "~0.4.1",
+    "grunt-cli": "^0.1.13",
     "grunt-ts": "^1.11.2",
     "grunt-file-append": "0.0.4",
     "load-grunt-tasks": "~0.2.0",

@@ -1,7 +1,7 @@
 {
   "name": "typeframework-generate-app",
   "description": "Typeframework webapp project template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Zeke Kievel <zeke.levu@gmail.com>",
   "license": "MIT",
   "keywords": [
