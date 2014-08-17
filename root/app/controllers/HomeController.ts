@@ -3,9 +3,7 @@
 class HomeController extends TF.Controller {
 
     index() {
-        this.response.render('index', { layout: 'layout' });
+        this.view('index', { layout: 'layout' });
     }
 
 }
-
-app.addController(HomeController);

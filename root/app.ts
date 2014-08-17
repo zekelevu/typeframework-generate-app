@@ -9,4 +9,5 @@
 /// <CONTROLLER REFERENCES>
 /// <reference path="app/controllers/HomeController.ts" />
 
+app.addController(HomeController);
 app.start();

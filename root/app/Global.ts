@@ -1,14 +1,17 @@
 /// <reference path="../app.ts" />
 
-declare var require: NodeJS.Require;
+var path = <NodeJS.Path> require('path');
+var app = new TF.Application(path.join(__dirname, '..'));
 
-var app = new TF.Application(__dirname + '/../', __dirname + '/app.d.ts');
 app.configure(() => {
+    // add declaration file
+    app.addDeclaration('.build/app.d.ts');
+
     // load config
-    app.config.addJson(app.root + 'app.json');
+    app.config.addJson('app.json');
 
     // default routes
-    app.router.map('/', { controller: 'Home', action: 'index', name: 'zeke' });
+    app.router.map('/', { controller: 'Home', action: 'index' });
     app.router.map('/:controller/:action?/:id?', { action: 'index' });
 
     // REST routes
